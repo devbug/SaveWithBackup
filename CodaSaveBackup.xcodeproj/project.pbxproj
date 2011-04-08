@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3F0432134F1D7D0029F7D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3F0431134F1D7D0029F7D9 /* Cocoa.framework */; };
+		1A3F043C134F1D7D0029F7D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3F043A134F1D7D0029F7D9 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A3F042E134F1D7D0029F7D9 /* CodaSaveBackup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaSaveBackup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3F0431134F1D7D0029F7D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A3F0434134F1D7D0029F7D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A3F0435134F1D7D0029F7D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A3F0436134F1D7D0029F7D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A3F0439134F1D7D0029F7D9 /* CodaSaveBackup-Info.plist */ = {isa = PBXFileReference; path = "CodaSaveBackup-Info.plist"; sourceTree = "<group>"; };
+		1A3F043B134F1D7D0029F7D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A3F043D134F1D7D0029F7D9 /* CodaSaveBackup-Prefix.pch */ = {isa = PBXFileReference; path = "CodaSaveBackup-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A3F042B134F1D7D0029F7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F0432134F1D7D0029F7D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3F0423134F1D7C0029F7D9 = {
+			isa = PBXGroup;
+			children = (
+				1A3F0437134F1D7D0029F7D9 /* CodaSaveBackup */,
+				1A3F0430134F1D7D0029F7D9 /* Frameworks */,
+				1A3F042F134F1D7D0029F7D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A3F042F134F1D7D0029F7D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F042E134F1D7D0029F7D9 /* CodaSaveBackup.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A3F0430134F1D7D0029F7D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F0431134F1D7D0029F7D9 /* Cocoa.framework */,
+				1A3F0433134F1D7D0029F7D9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A3F0433134F1D7D0029F7D9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F0434134F1D7D0029F7D9 /* AppKit.framework */,
+				1A3F0435134F1D7D0029F7D9 /* CoreData.framework */,
+				1A3F0436134F1D7D0029F7D9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1A3F0437134F1D7D0029F7D9 /* CodaSaveBackup */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F0438134F1D7D0029F7D9 /* Supporting Files */,
+			);
+			path = CodaSaveBackup;
+			sourceTree = "<group>";
+		};
+		1A3F0438134F1D7D0029F7D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A3F0439134F1D7D0029F7D9 /* CodaSaveBackup-Info.plist */,
+				1A3F043A134F1D7D0029F7D9 /* InfoPlist.strings */,
+				1A3F043D134F1D7D0029F7D9 /* CodaSaveBackup-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A3F042D134F1D7D0029F7D9 /* CodaSaveBackup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3F0440134F1D7D0029F7D9 /* Build configuration list for PBXNativeTarget "CodaSaveBackup" */;
+			buildPhases = (
+				1A3F042A134F1D7D0029F7D9 /* Sources */,
+				1A3F042B134F1D7D0029F7D9 /* Frameworks */,
+				1A3F042C134F1D7D0029F7D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodaSaveBackup;
+			productName = CodaSaveBackup;
+			productReference = 1A3F042E134F1D7D0029F7D9 /* CodaSaveBackup.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A3F0425134F1D7C0029F7D9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1A3F0428134F1D7C0029F7D9 /* Build configuration list for PBXProject "CodaSaveBackup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A3F0423134F1D7C0029F7D9;
+			productRefGroup = 1A3F042F134F1D7D0029F7D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A3F042D134F1D7D0029F7D9 /* CodaSaveBackup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A3F042C134F1D7D0029F7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3F043C134F1D7D0029F7D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A3F042A134F1D7D0029F7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A3F043A134F1D7D0029F7D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3F043B134F1D7D0029F7D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A3F043E134F1D7D0029F7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A3F043F134F1D7D0029F7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A3F0441134F1D7D0029F7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodaSaveBackup/CodaSaveBackup-Prefix.pch";
+				INFOPLIST_FILE = "CodaSaveBackup/CodaSaveBackup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1A3F0442134F1D7D0029F7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodaSaveBackup/CodaSaveBackup-Prefix.pch";
+				INFOPLIST_FILE = "CodaSaveBackup/CodaSaveBackup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A3F0428134F1D7C0029F7D9 /* Build configuration list for PBXProject "CodaSaveBackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3F043E134F1D7D0029F7D9 /* Debug */,
+				1A3F043F134F1D7D0029F7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A3F0440134F1D7D0029F7D9 /* Build configuration list for PBXNativeTarget "CodaSaveBackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3F0441134F1D7D0029F7D9 /* Debug */,
+				1A3F0442134F1D7D0029F7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A3F0425134F1D7C0029F7D9 /* Project object */;
+}
