@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'CodaSaveBackup' target in the 'CodaSaveBackup' project
-//
-
-#ifdef __OBJC__
-	#import <Cocoa/Cocoa.h>
-#endif
