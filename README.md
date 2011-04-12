@@ -15,9 +15,9 @@ Installation
 Usage
 ------
 
-Command+S 대신에 Ctrl+Shift+S 로 저장을 하세요!
-그러면 알아서 백업하며 저장을 해줍니다.
-백업 파일은 `~/SaveWithBackup/` 아래에 remote 경로 그대로 백업되니까 쉽게 찾을 수 있습니다!
+Command+S 대신에 Ctrl+Shift+S 로 저장을 하세요!<br />
+그러면 알아서 백업하며 저장을 해줍니다.<br />
+백업 파일은 `~/SaveWithBackup/` 아래에 remote 경로 그대로 백업되니까 쉽게 찾을 수 있습니다!<br />
 
 
 License
