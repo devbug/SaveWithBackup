@@ -93,8 +93,7 @@
 		return;
 	}
 	
-	NSArray *pathComponents = [[tview path] pathComponents];
-	NSString *name = [pathComponents lastObject];
+	NSString *name = [[tview path] lastPathComponent];
 	
 	bool isRemote = YES;
 	NSString *temp = @"~";
@@ -125,36 +124,32 @@
 	}*/
 	
 	NSArray *documents = [[NSDocumentController sharedDocumentController] documents];
-	NSInteger i = 0;
 
-	for (TSDocument *document in documents) {
-		if (i > 0) break;
+	// 이 시점에서는 무조건 1개만 나온다.
+	TSDocument *document = [documents objectAtIndex:0];
+	
+	if (document != nil) {
+		TSTabController *tab = document.selectedTabController;
+		TSWrapperViewController *wrapview = [tab activeViewController];
+		TSNodeWrapper *node = [wrapview wrapper];
+		PCNode *remoteNode = [node remoteNode];
 		
-		if (document != nil) {
-			TSTabController *tab = document.selectedTabController;
-			TSWrapperViewController *wrapview = [tab activeViewController];
-			TSNodeWrapper *node = [wrapview wrapper];
-			PCNode *remoteNode = [node remoteNode];
+		if (remoteNode) {
+			isRemote = [remoteNode isRemote];
+			[str appendString:[self getSite:isRemote]];
 			
-			if (remoteNode) {
-				isRemote = [remoteNode isRemote];
-				[str appendString:[self getSite:isRemote]];
+			NSString *lastRemotePath = [remoteNode displayPath];
+			
+			if (lastRemotePath) {
+				if (NO == [lastRemotePath hasPrefix:@"/"])
+					[str appendString:@"/"];
 				
-				NSString *lastRemotePath = [remoteNode displayPath];
-				
-				if (lastRemotePath) {
-					if (NO == [lastRemotePath hasPrefix:@"/"])
-						[str appendString:@"/"];
-					
-					[str appendString:lastRemotePath];
-				}
-			} else
-				isRemote = NO;
+				[str appendString:lastRemotePath];
+			}
 		} else
 			isRemote = NO;
-		
-		i++;
-	}
+	} else
+		isRemote = NO;
 	
 	if (!isRemote && [tview path] != nil) {
 		[str appendString:[self getSite:isRemote]];
@@ -164,7 +159,7 @@
 		
 		[str appendString:[tview path]];
 	}
-	else if (!isRemote || i == 0) {
+	else if (!isRemote || documents.count == 0) {
 		// do nothing.. just save..
 		[tview save];
 		
@@ -176,6 +171,11 @@
 	if (NO == [str hasSuffix:@"/"])
 		[str appendString:@"/"];
 	
+	NSDateFormatter *dateFormat = [[NSDateFormatter alloc] initWithDateFormat:@"%Y%m%d/" allowNaturalLanguage:NO];
+	NSString *theDate = [dateFormat stringFromDate:[NSDate date]];
+	
+	[str appendFormat:theDate];
+	
 	
 	char *path = NULL;
 	path = (char *)malloc([str length] * 4);
@@ -184,11 +184,11 @@
 	free(path);
 	
 	
-	NSDateFormatter *dateFormat = [[NSDateFormatter alloc] initWithDateFormat:@"%Y%m%d-%H%M%S" allowNaturalLanguage:NO];
+	NSDateFormatter *timeFormat = [[NSDateFormatter alloc] initWithDateFormat:@"%H%M%S" allowNaturalLanguage:NO];
 	
-	NSString *theDate = [dateFormat stringFromDate:[NSDate date]];
+	NSString *theTime = [timeFormat stringFromDate:[NSDate date]];
 	
-	NSString *fullpath = [NSString stringWithFormat:@"%@%@_%@", str, theDate, name];
+	NSString *fullpath = [NSString stringWithFormat:@"%@%@_%@", str, theTime, name];
 	
 	NSFileHandle *writeFile;
 	NSData *data = [[tview string] dataUsingEncoding:NSUTF8StringEncoding];

@@ -22,6 +22,15 @@ Command+S 대신에 Ctrl+Shift+S 로 저장을 하세요!<br />
 [![](http://devbug.me/attach/1/4724103488.png)](http://devbug.me/attach/1/4724103488.png)
 
 
+Command+S로 SaveWithBackup을!
+-----------------------------
+
+시스템 설정 -> 키보드 -> 응용 프로그램 단축키 -> + 버튼을 누른 뒤<br />
+[![](http://devbug.me/attach/1/4082176201.png)](http://devbug.me/attach/1/4082176201.png) <br />
+위 스샷과 같이 입력해줍니다.<br />
+앞으로 Command+S 로 SaveWithBackup을 실행이 가능하게 됩니다.
+
+
 License
 -------
 
