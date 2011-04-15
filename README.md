@@ -8,7 +8,7 @@ Coda의 백업 없는 원격 경로 저장은 종종 소스의 유실을 초래�
 Installation
 ------------
 
-[다음 페이지](http://devbug.me/647)를 방문하여 첨부된 SaveWithBackup.codaplugin_1.0.zip 파일을 받습니다.<br />
+[다음 페이지](http://devbug.me/647)를 방문하여 첨부된 SaveWithBackup.codaplugin_1.1.zip 파일을 받습니다.<br />
 압축을 해제한 후 나온 파일을 실행합니다.<br />
 
 
@@ -19,7 +19,7 @@ Command+S 대신에 Ctrl+Shift+S 로 저장을 하세요!<br />
 그러면 알아서 백업하며 저장을 해줍니다.<br />
 백업 파일은 `~/CodaSaveBackup/` 아래에 remote 경로 그대로 백업되니까 쉽게 찾을 수 있습니다!<br />
 
-[![](http://devbug.me/attach/1/4724103488.png)](http://devbug.me/attach/1/4724103488.png)
+[![](http://devbug.me/attach/1/8051010332.png)](http://devbug.me/attach/1/8051010332.png)
 
 
 Command+S로 SaveWithBackup을!
