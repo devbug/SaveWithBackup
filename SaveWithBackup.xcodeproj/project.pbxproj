@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0FFC5E156E037A001E2132 /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
 		1A3F042E134F1D7D0029F7D9 /* SaveWithBackup.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveWithBackup.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3F0431134F1D7D0029F7D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1A3F0434134F1D7D0029F7D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -23,17 +24,12 @@
 		1A3F0439134F1D7D0029F7D9 /* SaveWithBackup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SaveWithBackup-Info.plist"; sourceTree = "<group>"; };
 		1A3F043B134F1D7D0029F7D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A3F043D134F1D7D0029F7D9 /* SaveWithBackup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaveWithBackup-Prefix.pch"; sourceTree = "<group>"; };
-		1A3F044B134F1E3F0029F7D9 /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodaPlugInsController.h; path = ../CodaPlugInsController.h; sourceTree = "<group>"; };
 		1A3F044C134F1E880029F7D9 /* SaveWithBackup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveWithBackup.h; sourceTree = "<group>"; };
 		1A684FD5134F8F5900BF8A7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A684FD7134F8F6400BF8A7C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A9943AA156DF41700C44028 /* headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headers.h; sourceTree = "<group>"; };
 		1AB7328E13502140005B7FFB /* SaveWithBackup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SaveWithBackup.mm; sourceTree = "<group>"; };
-		1AB7329313503B3C005B7FFB /* TSNodeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNodeWrapper.h; sourceTree = "<group>"; };
-		1AB7329413503B3C005B7FFB /* TSWrapperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWrapperViewController.h; sourceTree = "<group>"; };
-		1AB7329513503B64005B7FFB /* TSTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabController.h; sourceTree = "<group>"; };
-		1AB73298135058E7005B7FFB /* PCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCNode.h; sourceTree = "<group>"; };
 		1AB73299135152D0005B7FFB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1AF0D8BF134FD13F00DEBFA3 /* TSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDocument.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +103,10 @@
 		1A3F0449134F1E0A0029F7D9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1AB73298135058E7005B7FFB /* PCNode.h */,
-				1AB7329313503B3C005B7FFB /* TSNodeWrapper.h */,
-				1AB7329513503B64005B7FFB /* TSTabController.h */,
-				1AB7329413503B3C005B7FFB /* TSWrapperViewController.h */,
-				1AF0D8BF134FD13F00DEBFA3 /* TSDocument.h */,
-				1A3F044B134F1E3F0029F7D9 /* CodaPlugInsController.h */,
+				1A0FFC5E156E037A001E2132 /* CodaPlugInsController.h */,
 				1A3F044C134F1E880029F7D9 /* SaveWithBackup.h */,
 				1AB7328E13502140005B7FFB /* SaveWithBackup.mm */,
+				1A9943AA156DF41700C44028 /* headers.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

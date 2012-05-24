@@ -9,20 +9,15 @@
 #import "SaveWithBackup.h"
 #import "CodaPlugInsController.h"
 
-#import "TSDocument.h"
+#import "headers.h"
 
 #define BACKUP_DIR	@"/CodaSaveBackup/"
 
 
-@class TSDocument, TSTabController, TSWrapperViewController, TSNodeWrapper, PCNode;
-
-
 @implementation SaveWithBackup
 
-- (id)initWithPlugInController:(CodaPlugInsController*)inController bundle:(NSBundle*)aBundle
-{
-	if ( (self = [super init]) != nil )
-	{
+- (id)initWithPlugInController:(CodaPlugInsController*)inController bundle:(NSBundle*)aBundle {
+	if ((self = [super init]) != nil) {
 		controller = inController;
 		[controller registerActionWithTitle:NSLocalizedString(@"Save with Backup", @"Save with Backup") 
 					  underSubmenuWithTitle:nil
@@ -36,12 +31,11 @@
 }
 
 
-- (NSString*)name
-{
+- (NSString*)name {
 	return @"SaveWithBackup";
 }
 
-- (NSString *) getSite:(BOOL)isRemote {
+- (NSString *)getSite:(BOOL)isRemote {
 	NSMutableString *str = [NSMutableString stringWithFormat:@""];
 	
 	if (!isRemote) {
@@ -82,7 +76,7 @@
 	return str;
 }
 
-- (void) safetySave:(id)sender {
+- (void)safetySave:(id)sender {
 	if ([controller apiVersion] < 2) return;
 	
 	CodaTextView *tview = [controller focusedTextView:self];
@@ -205,6 +199,7 @@
 	
 	//[tview insertText:fullpath];
 	
+	[timeFormat release];
 	[dateFormat release];
 	[str release];
 }
